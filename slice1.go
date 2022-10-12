@@ -22,5 +22,7 @@ func main() {
 	split := array[:7]
 	fmt.Printf("len = %d , cap = %d , ", len(split), cap(split), split)
 
-	copy := copy(array)
+	c := make([]int, 7)
+	// 将array中的数据依次拷贝到c
+	copy(c, array)
 }
